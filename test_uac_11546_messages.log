@@ -1,0 +1,113 @@
+----------------------------------------------- 2012-03-09 21:40:05:40.523
+UDP message sent (584 bytes):
+
+INVITE sip:2005@192.168.2.101:5060 SIP/2.0
+Via: SIP/2.0/UDP 172.16.238.1:5060;branch=z9hG4bK-11546-1-0
+From: sipp <sip:sipp@172.16.238.1:5060>;tag=1
+To: sut <sip:2005@192.168.2.101:5060>
+Call-ID: 1-11546@172.16.238.1
+CSeq: 1 INVITE
+Contact: sip:sipp@172.16.238.1:5060
+Max-Forwards: 70
+Subject: Performance Test
+Content-Type: application/sdp
+Content-Length:   208
+
+v=0
+o=user1 53655765 2353687637 IN IP4 172.16.238.1
+s=-
+c=IN IP4 172.16.238.1
+t=0 0
+m=audio 6000 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+a=extmap: 6/sendonly urn:ietf:params:rtp-hdrext:ssrc-audio-level vad=on
+
+----------------------------------------------- 2012-03-09 21:40:05:43.775
+UDP message received [449] bytes :
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/UDP 172.16.238.1:5060;branch=z9hG4bK-11546-1-0;received=192.168.2.100;rport=5060
+From: sipp <sip:sipp@172.16.238.1:5060>;tag=1
+To: sut <sip:2005@192.168.2.101:5060>
+Call-ID: 1-11546@172.16.238.1
+CSeq: 1 INVITE
+Server: Asterisk PBX 10.1.2
+Allow: INVITE, ACK, CANCEL, OPTIONS, BYE, REFER, SUBSCRIBE, NOTIFY, INFO, PUBLISH
+Supported: replaces, timer
+Contact: <sip:2005@192.168.2.101:5060>
+Content-Length: 0
+
+
+----------------------------------------------- 2012-03-09 21:40:05:44.617
+UDP message received [764] bytes :
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 172.16.238.1:5060;branch=z9hG4bK-11546-1-0;received=192.168.2.100;rport=5060
+From: sipp <sip:sipp@172.16.238.1:5060>;tag=1
+To: sut <sip:2005@192.168.2.101:5060>;tag=as4c519239
+Call-ID: 1-11546@172.16.238.1
+CSeq: 1 INVITE
+Server: Asterisk PBX 10.1.2
+Allow: INVITE, ACK, CANCEL, OPTIONS, BYE, REFER, SUBSCRIBE, NOTIFY, INFO, PUBLISH
+Supported: replaces, timer
+Contact: <sip:2005@192.168.2.101:5060>
+Content-Type: application/sdp
+Content-Length: 271
+
+v=0
+o=root 781087931 781087931 IN IP4 192.168.2.101
+s=Asterisk PBX 10.1.2
+c=IN IP4 192.168.2.101
+t=0 0
+m=audio 10172 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+a=extmap:6/recvonly urn:ietf:params:rtp-hdrext:ssrc-audio-level
+a=silenceSupp:off - - - -
+a=ptime:20
+a=sendrecv
+
+----------------------------------------------- 2012-03-09 21:40:05:44.722
+UDP message sent (350 bytes):
+
+ACK sip:2005@192.168.2.101:5060 SIP/2.0
+Via: SIP/2.0/UDP 172.16.238.1:5060;branch=z9hG4bK-11546-1-4
+From: sipp <sip:sipp@172.16.238.1:5060>;tag=1
+To: sut <sip:2005@192.168.2.101:5060>;tag=as4c519239
+Call-ID: 1-11546@172.16.238.1
+CSeq: 1 ACK
+Contact: sip:sipp@172.16.238.1:5060
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2012-03-09 21:40:25:46.012
+UDP message sent (350 bytes):
+
+BYE sip:2005@192.168.2.101:5060 SIP/2.0
+Via: SIP/2.0/UDP 172.16.238.1:5060;branch=z9hG4bK-11546-1-6
+From: sipp <sip:sipp@172.16.238.1:5060>;tag=1
+To: sut <sip:2005@192.168.2.101:5060>;tag=as4c519239
+Call-ID: 1-11546@172.16.238.1
+CSeq: 2 BYE
+Contact: sip:sipp@172.16.238.1:5060
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2012-03-09 21:40:25:46.707
+UDP message received [417] bytes :
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 172.16.238.1:5060;branch=z9hG4bK-11546-1-6;received=192.168.2.100;rport=5060
+From: sipp <sip:sipp@172.16.238.1:5060>;tag=1
+To: sut <sip:2005@192.168.2.101:5060>;tag=as4c519239
+Call-ID: 1-11546@172.16.238.1
+CSeq: 2 BYE
+Server: Asterisk PBX 10.1.2
+Allow: INVITE, ACK, CANCEL, OPTIONS, BYE, REFER, SUBSCRIBE, NOTIFY, INFO, PUBLISH
+Supported: replaces, timer
+Content-Length: 0
+
+
